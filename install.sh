@@ -65,8 +65,7 @@ echo ""
 echo -e "${yellow}---------------------->>>>>〔3X-UI优化版〕最新版为：${last_version}${plain}"
 sleep 4
 
-os_version=$(grep -i version_id /etc/os-release | cut -d \" -f2 | cut -d . -f1)
-
+os_version=12
 if [[ "${release}" == "arch" ]]; then
     echo "您的操作系统是 ArchLinux"
 elif [[ "${release}" == "manjaro" ]]; then
