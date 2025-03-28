@@ -512,7 +512,7 @@ enable_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://any.188174.xyz/https://github.com/xeefei/3x-ui/raw/main/x-ui.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://any.188174.xyz/https://github.com/XiChenBaBa/3x-ui/raw/main/x-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "下载脚本失败，请检查机器是否可以连接至 GitHub"
