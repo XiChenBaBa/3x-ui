@@ -142,7 +142,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://any.188174.xyz/https://raw.githubusercontent.com/xeefei/3x-ui/main/install.sh)
+    bash <(curl -Ls https://any.188174.xyz/https://raw.githubusercontent.com/XiChenBaBa/3x-ui/main/install.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -161,7 +161,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://any.188174.xyz/https://raw.githubusercontent.com/xeefei/3x-ui/main/install.sh)
+    bash <(curl -Ls https://any.188174.xyz/https://raw.githubusercontent.com/XiChenBaBa/3x-ui/main/install.sh)
     if [[ $? == 0 ]]; then
         LOGI "更新完成，面板已自动重启"
         exit 0
@@ -179,7 +179,7 @@ update_menu() {
         return 0
     fi
     
-    wget --no-check-certificate -O /usr/bin/x-ui https://any.188174.xyz/https://raw.githubusercontent.com/xeefei/3x-ui/main/x-ui.sh
+    wget --no-check-certificate -O /usr/bin/x-ui https://any.188174.xyz/https://raw.githubusercontent.com/XiChenBaBa/3x-ui/main/x-ui.sh
     chmod +x /usr/local/x-ui/x-ui.sh
     chmod +x /usr/bin/x-ui
     
@@ -201,7 +201,7 @@ custom_version() {
         exit 1
     fi
 
-    download_link="https://any.188174.xyz/https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh"
+    download_link="https://any.188174.xyz/https://raw.githubusercontent.com/XiChenBaBa/3x-ui/master/install.sh"
 
     # Use the entered panel version in the download link
     install_command="bash <(curl -Ls $download_link) v$panel_version"
@@ -235,7 +235,7 @@ uninstall() {
     echo ""
     echo -e "卸载成功\n"
     echo "如果您需要再次安装此面板，可以使用以下命令:"
-    echo -e "${green}bash <(curl -Ls https://any.188174.xyz/https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)${plain}"
+    echo -e "${green}bash <(curl -Ls https://any.188174.xyz/https://raw.githubusercontent.com/XiChenBaBa/3x-ui/master/install.sh)${plain}"
     echo ""
     # Trap the SIGTERM signal
     trap delete_script SIGTERM
